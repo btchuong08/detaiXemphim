@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HeaderModule } from 'src/app/layouts/header/header.module';
+import { FooterModule } from 'src/app/layouts/footer/footer.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { HeaderModule } from 'src/app/layouts/header/header.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ]
 })
 export class HomeModule { }
