@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HeaderModule } from 'src/app/layouts/header/header.module';
 import { FooterModule } from 'src/app/layouts/footer/footer.module';
+import { DanhSachPhimModule } from './danh-sach-phim/danh-sach-phim.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { FooterModule } from 'src/app/layouts/footer/footer.module';
     CommonModule,
     HomeRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    DanhSachPhimModule
   ]
 })
 export class HomeModule { }

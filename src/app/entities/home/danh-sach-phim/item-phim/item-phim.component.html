@@ -1,0 +1,34 @@
+<!--Begin item -->
+<div class="card">
+    <img class="card-img-top" [src]="phim.hinhAnh" alt="" />
+    <div class="card-body">
+      <h4 class="card-title">{{ phim.tenPhim }}</h4>
+      <p class="card-text">{{ phim.gia }}</p>
+  
+      <!-- Cách 1 -->
+      <!-- <a class="btn btn-primary" routerLink="/chi-tiet/{{ phim.maPhim }}"
+        >Chi tiết</a
+      > -->
+  
+      <!-- Cách 2 -->
+      <!-- <a
+        class="btn btn-primary"
+        [routerLink]="['/chi-tiet/', phim.maPhim]"
+        [queryParams]="{ tenPhim: phim.tenPhim }"
+        >Chi tiết</a
+      > -->
+  
+      <!-- Cách 3 -->
+      <button class="btn btn-success" (click)="chiTiet()">Chi tiết</button>
+      <button
+        class="btn btn-info"
+        data-toggle="modal"
+        data-target="#modelId"
+        (click)="xemNhanh()"
+      >
+        Xem nhanh
+      </button>
+    </div>
+  </div>
+  <!-- End item -->
+  

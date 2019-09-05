@@ -1,0 +1,17 @@
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+.nav-link:hover {
+    color: red;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+#login {  
+    opacity: 0.5;
+}
+.carousel-item img {
+    width: 100%;
+}
