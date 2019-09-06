@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
+
+
 
 @NgModule({
   declarations: [
@@ -11,9 +13,13 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
+  HttpClientModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient,
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
